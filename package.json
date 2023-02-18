@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "set DEBUG=* & node ./bin/www",
-    "dev": "set DEBUG=* & nodemon ./bin/www",
+    "start": "set DEBUG=* & node ./index.js",
+    "dev": "set DEBUG=* & nodemon ./index.js",
     "test": "jest --detectOpenHandles"
   },
   "dependencies": {
