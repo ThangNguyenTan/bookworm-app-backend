@@ -10,11 +10,12 @@ const db = {};
 
 if (!config) {
   config = {
-    "username": "sql12599202",
-    "password": "Qjm3mbqhNu",
-    "database": "sql12599202",
-    "host": "sql12.freesqldatabase.com",
-    "dialect": "mysql"
+    "username": "umqrszam",
+    "password": "nJlbrxqIIq4l_2YWU88CAmAjpu2B-Kpk",
+    "database": "umqrszam",
+    "host": "rosie.db.elephantsql.com",
+    "dialect": "postgres",
+    "operatorsAliases": 0,
   }
 }
 
