@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
       },
       review_date: {
-        type: DataTypes.DATE,
+        type: 'TIMESTAMP',
         allowNull: true,
         defaultValue: sequelize.literal("CURRENT_TIMESTAMP"),
       },
