@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const Sequelize = require("sequelize");
 const mysql2 = require("mysql2");
+const pg = require("pg");
 const basename = path.basename(__filename);
 let config = null;
 const db = {};
@@ -21,6 +22,10 @@ if (!config) {
 
 if (config.dialect === 'mysql') {
   config.dialectModule = mysql2;
+}
+
+if (config.dialect === 'postgres') {
+  config.dialectModule = pg;
 }
 
 let sequelize;
