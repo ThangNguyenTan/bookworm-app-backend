@@ -3,6 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 const Sequelize = require("sequelize");
+const mysql2 = require("mysql2");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
 let config = require(__dirname + "/../config/config.json")[env];
@@ -16,6 +17,10 @@ if (!config) {
     "host": "sql12.freesqldatabase.com",
     "dialect": "mysql"
   }
+}
+
+if (config.dialect === 'mysql') {
+  config.dialectModule = mysql2;
 }
 
 let sequelize;
